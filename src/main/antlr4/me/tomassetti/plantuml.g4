@@ -13,12 +13,12 @@ asClause: As WS (id=ID|iduc=UsecaseLiteral);
 Start: '@startuml';
 End: '@enduml';
 
-Title: 'title ' ('A'..'Z' | 'a'..'z' | '1..9' | ' ')+ '\n';
+Title: 'title ' ('A'..'Z' | 'a'..'z' | '1'..'9' | ' ')+ '\n';
 As: 'as';
 
-UsecaseLiteral: '(' ('A'..'Z' | 'a'..'z' | '1..9' | ' ')+ ')';
+UsecaseLiteral: '(' ('A'..'Z' | 'a'..'z' | '1'..'9' | ' ')+ ')';
 Usecase: 'usecase';
-ID: ('A'..'Z' | 'a'..'z' | '1..9')+;
+ID: ('A'..'Z' | 'a'..'z' | '1'..'9')+;
 
 WS: (' ' | '\t')+;
 NL:  ('\r'? '\n')+;
